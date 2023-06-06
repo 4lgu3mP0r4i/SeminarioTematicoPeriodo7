@@ -1,0 +1,22 @@
+ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => TelaDeEscolha(),
+                        ));
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.amber[500],
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 60, vertical: 20),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  child: const Text(
+                    'JOGAR',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.black),
+                  ),
+                )
